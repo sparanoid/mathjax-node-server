@@ -18,6 +18,9 @@ mjAPI.start();
 
 const server = http.createServer((req, res) => {
   let parsedUrl = url.parse(req.url, true);
+  let color = `#${parsedUrl.query.fg}`.match(/^#([0-9a-f]{3}){1,2}$/i) === null
+    ? '#000' :
+    `#${parsedUrl.query.fg}`;
 
   if (base === parsedUrl.pathname && param in parsedUrl.query) {
     mjAPI.typeset({
@@ -26,8 +29,10 @@ const server = http.createServer((req, res) => {
       svg: true,
       speakText: false,
     }, function (data) {
+      let svg = data.svg;
+      svg = svg.replace(/ style="/, ` style="color: var(--text-color, ${color}); `);
       res.setHeader('Content-Type', 'image/svg+xml');
-      res.end(data.svg);
+      res.end(svg);
     });
   } else {
     res.statusCode = 501;
