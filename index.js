@@ -30,6 +30,7 @@ const server = http.createServer((req, res) => {
       res.end(data.svg);
     });
   } else {
+    res.statusCode = 501;
     res.end('Not a valid route');
   }
 });
