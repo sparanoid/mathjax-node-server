@@ -10,9 +10,12 @@ const param = 'tex'
 // https://github.com/mathjax/MathJax-node#getting-started
 mjAPI.config({
   MathJax: {
-    // traditional MathJax configuration
+    TeX: {
+      extensions: ['AMSmath.js', 'AMSsymbols.js', 'noErrors.js', 'noUndefined.js']
+    }
   },
-  displayErrors: false
+  displayErrors: false,
+  extensions: 'TeX/color.js'
 });
 mjAPI.start();
 
