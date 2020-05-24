@@ -12,9 +12,6 @@ mjAPI.config({
   MathJax: {
     TeX: {
       extensions: ['AMSmath.js', 'AMSsymbols.js', 'noErrors.js', 'noUndefined.js']
-    },
-    svg: {
-      internalSpeechTitles: true
     }
   },
   displayErrors: false,
