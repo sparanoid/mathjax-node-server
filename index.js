@@ -12,6 +12,9 @@ mjAPI.config({
   MathJax: {
     TeX: {
       extensions: ['AMSmath.js', 'AMSsymbols.js', 'noErrors.js', 'noUndefined.js']
+    },
+    svg: {
+      internalSpeechTitles: true
     }
   },
   displayErrors: false,
@@ -30,7 +33,6 @@ const server = http.createServer((req, res) => {
       math: parsedUrl.query[param],
       format: 'TeX',
       svg: true,
-      speakText: false,
     }, function (data) {
       let svg = data.svg;
       svg = svg.replace(/ style="/, ` style="color: var(--text-color, ${color}); `);
