@@ -22,7 +22,7 @@ mjAPI.start();
 const server = http.createServer((req, res) => {
   let parsedUrl = url.parse(req.url, true);
   let color = `#${parsedUrl.query.fg}`.match(/^#([0-9a-f]{3}){1,2}$/i) === null
-    ? '#000' :
+    ? 'currentColor' :
     `#${parsedUrl.query.fg}`;
 
   if (base === parsedUrl.pathname && param in parsedUrl.query) {
