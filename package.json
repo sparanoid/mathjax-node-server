@@ -7,9 +7,14 @@
   "author": "Tunghsiao Liu <t@sparanoid.com>",
   "license": "MIT",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "release": "npx release-it"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   },
   "dependencies": {
-    "mathjax-node": "^2.1.1"
+    "mathjax": "^3.2.0"
   }
 }
