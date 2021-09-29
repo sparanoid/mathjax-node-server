@@ -1,7 +1,13 @@
 # MathJax Node Server
 
-Zhihu-like MathJax Node server
+Zhihu-like `tex2svg` MathJax Node service by passing TeX from URL query
+
+## Usae
+
+```
+yarn start
+```
 
 ## License
 
-MIT
+AGPL-3.0
