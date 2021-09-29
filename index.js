@@ -2,7 +2,7 @@ const mathjax = require('mathjax');
 const http = require('http');
 const url = require('url');
 
-const listen = '127.0.0.1';
+const listen = '0.0.0.0';
 const port = 3456;
 const base = '/'
 
@@ -52,4 +52,8 @@ const server = http.createServer((req, res) => {
 
 server.listen(port, listen, () => {
   console.log(`MathJax server is running at http://${listen}:${port}/`);
+});
+
+process.on('SIGINT', () => {
+  process.exit();
 });
