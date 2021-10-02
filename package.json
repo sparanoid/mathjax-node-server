@@ -17,7 +17,8 @@
   "release-it": {
     "git": {
       "commitArgs": "-S",
-      "tagArgs": "-s"
+      "tagArgs": "-s",
+      "tagAnnotation": "chore: release ${version}"
     },
     "github": {
       "release": true
