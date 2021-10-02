@@ -1,6 +1,6 @@
 {
   "name": "mathjax-node-server",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Render MathJax on server",
   "main": "index.js",
   "repository": "https://github.com/sparanoid/mathjax-node-server.git",
