@@ -14,19 +14,6 @@
     "access": "public",
     "registry": "https://registry.npmjs.org/"
   },
-  "release-it": {
-    "git": {
-      "commitArgs": "-S",
-      "tagArgs": "-s",
-      "tagAnnotation": "chore: release ${version}"
-    },
-    "github": {
-      "release": true
-    },
-    "npm": {
-      "publish": true
-    }
-  },
   "dependencies": {
     "mathjax": "^3.2.0"
   }
