@@ -50,6 +50,7 @@ jobs:
             sparanoid/mathjax-node-server
             ghcr.io/sparanoid/mathjax-node-server
           tags: |
+            type=edge
             type=schedule
             type=ref,event=branch
             type=ref,event=pr
