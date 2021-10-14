@@ -1,13 +1,13 @@
 variable "DEFAULT_TAG" {
-  default = "sparanoid/mathjax-node-server:local"
+  default = ["sparanoid/mathjax-node-server:local"]
 }
 
-// Special target: https://github.com/docker/metadata-action#bake-definition
+# Special target: https://github.com/docker/metadata-action#bake-definition
 target "docker-metadata-action" {
-  tags = ["${DEFAULT_TAG}"]
+  tags = "${DEFAULT_TAG}"
 }
 
-// Default target if none specified
+# Default target if none specified
 group "default" {
   targets = ["build-local"]
 }
