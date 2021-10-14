@@ -2,6 +2,9 @@
 
 Zhihu-like `tex2svg` MathJax Node service by passing TeX from URL query
 
+- [Docker Hub](https://hub.docker.com/r/sparanoid/mathjax-node-server)
+- [ghcr.io](https://github.com/users/sparanoid/packages/container/package/mathjax-node-server)
+
 ## Usage
 
 ```bash
