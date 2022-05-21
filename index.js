@@ -53,7 +53,3 @@ const server = http.createServer((req, res) => {
 server.listen(port, listen, () => {
   console.log(`MathJax server is running at http://${listen}:${port}/`);
 });
-
-process.on('SIGINT', () => {
-  process.exit();
-});
