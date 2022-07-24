@@ -6,6 +6,8 @@ WORKDIR /app
 
 COPY . /app
 
+RUN apk add --no-cache curl
+
 RUN yarn --frozen-lockfile && \
     yarn cache clean
 
