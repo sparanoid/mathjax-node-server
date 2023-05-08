@@ -8,7 +8,7 @@ COPY . /app
 
 RUN apk add --no-cache curl
 
-RUN yarn global add pnpm && pnpm i --frozen-lockfile \
+RUN yarn global add pnpm && pnpm i --frozen-lockfile
 
 EXPOSE 3456
 
