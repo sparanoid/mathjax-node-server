@@ -8,8 +8,8 @@ COPY . /app
 
 RUN apk add --no-cache curl
 
-RUN yarn --frozen-lockfile && \
-    yarn cache clean
+RUN corepack enable && corepack prepare pnpm@latest --activate \
+    pnpm i --frozen-lockfile
 
 EXPOSE 3456
 

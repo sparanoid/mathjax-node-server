@@ -1,0 +1,12 @@
+lockfileVersion: '6.0'
+
+dependencies:
+  mathjax:
+    specifier: ^3.2.0
+    version: 3.2.0
+
+packages:
+
+  /mathjax@3.2.0:
+    resolution: {integrity: sha512-PL+rdYRK4Wxif+SQ94zP/L0sv6/oW/1WdQiIx0Jvn9FZaU5W9E6nlIv8liYAXBNPL2Fw/i+o/mZ1212eSzn0Cw==}
+    dev: false
