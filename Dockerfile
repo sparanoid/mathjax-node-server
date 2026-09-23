@@ -12,4 +12,4 @@ RUN bun install --frozen-lockfile --production
 
 EXPOSE 3456
 
-CMD [ "bun", "index.js" ]
+CMD [ "bun", "index.ts" ]
