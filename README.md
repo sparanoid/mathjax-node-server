@@ -13,8 +13,8 @@ docker run --init -p 3456:3456 ghcr.io/sparanoid/mathjax-node-server:latest
 ## Development
 
 ```
-yarn install
-yarn start
+bun install
+bun start
 ```
 
 ## License

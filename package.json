@@ -7,8 +7,8 @@
   "author": "Sparanoid <t@sparanoid.com>",
   "license": "MIT",
   "scripts": {
-    "start": "node index.js",
-    "release": "npx release-it"
+    "start": "bun index.js",
+    "release": "bunx release-it"
   },
   "publishConfig": {
     "access": "public",

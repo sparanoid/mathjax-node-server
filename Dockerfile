@@ -1,4 +1,4 @@
-FROM node:18-alpine
+FROM oven/bun:1-alpine
 
 ENV NODE_ENV=production
 
@@ -8,8 +8,8 @@ COPY . /app
 
 RUN apk add --no-cache curl
 
-RUN yarn global add pnpm && pnpm i --frozen-lockfile
+RUN bun install --frozen-lockfile --production
 
 EXPOSE 3456
 
-CMD [ "node", "index.js" ]
+CMD [ "bun", "index.js" ]
