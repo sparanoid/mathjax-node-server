@@ -1,16 +1,22 @@
-lockfileVersion: '6.0'
+lockfileVersion: '9.0'
 
 settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
-dependencies:
-  mathjax:
-    specifier: ^3.2.0
-    version: 3.2.2
+importers:
+
+  .:
+    dependencies:
+      mathjax:
+        specifier: ^3.2.0
+        version: 3.2.2
 
 packages:
 
-  /mathjax@3.2.2:
+  mathjax@3.2.2:
     resolution: {integrity: sha512-Bt+SSVU8eBG27zChVewOicYs7Xsdt40qm4+UpHyX7k0/O9NliPc+x77k1/FEsPsjKPZGJvtRZM1vO+geW0OhGw==}
-    dev: false
+
+snapshots:
+
+  mathjax@3.2.2: {}
